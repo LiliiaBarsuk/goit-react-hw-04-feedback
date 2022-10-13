@@ -11,7 +11,7 @@ export const App = () => {
   const total = good + neutral + bad;
   
   const buttonClick = e => {
-    console.log( e.currentTarget);
+
     const { name } = e.currentTarget;
 
     switch (name) {
