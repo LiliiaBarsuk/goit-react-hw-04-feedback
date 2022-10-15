@@ -4,6 +4,8 @@ import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from "./Section/Section";
 import { Notification } from "./Notification/Notification";
 
+const options = ['good', 'neutral', 'bed'];
+
 export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -36,7 +38,7 @@ export const App = () => {
     return Math.round((g / tot) * 100)
   }
  
-  const options = ['good', 'neutral', 'bed']
+  
   return (
     <div
       style={{
